@@ -4,7 +4,7 @@ import Card from "./components/theme/Card";
 import { ThemeContext } from "./context/ThemeContext";
 
 function App() {
-  const { theme, toggleTheme } = use(ThemeContext);
+  const { theme } = use(ThemeContext);
   return (
     <div
       className={`${
