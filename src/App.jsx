@@ -2,6 +2,7 @@ import { version, use } from "react";
 import PostList from "./components/posts/PostList";
 import Card from "./components/theme/Card";
 import { ThemeContext } from "./context/ThemeContext";
+import Products from "./components/products/products";
 
 function App() {
   const { theme } = use(ThemeContext);
@@ -15,7 +16,8 @@ function App() {
     >
       <p>React version : {version}</p>
       <Card />
-      <PostList />
+      <Products />
+      {/* <PostList /> */}
     </div>
   );
 }
