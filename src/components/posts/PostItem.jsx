@@ -12,9 +12,7 @@ function PostItem() {
   return (
     <div className="flex flex-col mx-auto">
       {data.map((item) => (
-        <p key={item.id} className="text-red-500">
-          {item.title}
-        </p>
+        <p key={item.id}>{item.title}</p>
       ))}
     </div>
   );
