@@ -17,7 +17,7 @@ function App() {
       <p>React version : {version}</p>
       <Card />
       <Products />
-      {/* <PostList /> */}
+      <PostList />
     </div>
   );
 }

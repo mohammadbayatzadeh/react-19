@@ -1,7 +1,9 @@
 import React from "react";
+import AddButton from "./AddButton";
 
 function ProductInput({ AddOne }) {
-  const formAction = (formData) => {
+  const formAction = async (formData) => {
+    await new Promise((res) => setTimeout(res, 2000));
     const newProduct = {
       title: formData.get("title"),
       price: formData.get("price"),
@@ -12,7 +14,7 @@ function ProductInput({ AddOne }) {
     <form action={formAction}>
       <input name="title" placeholder="title" />
       <input name="price" placeholder="title" />
-      <button type="submit">submit</button>
+      <AddButton />
     </form>
   );
 }
